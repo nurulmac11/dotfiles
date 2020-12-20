@@ -6,8 +6,6 @@ if [[ $( tty ) == /dev/tty? ]]; then
     setleds +num
 fi
 
-numlockx on
-
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -191,10 +189,12 @@ export BROWSER=/usr/bin/firefox
 alias run_android='emulator -avd Pixel_2_API_28 & disown'
 source ~/.bash_profile
 
+
 alias picom2="picom --experimental-backends &"
 alias picom="(picom2) && disown"
 alias ntp="sudo ntpdate -s time.nist.gov"
 alias redshift="redshift -P -O 3000"
+
 
 
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
