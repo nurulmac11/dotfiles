@@ -1,0 +1,31 @@
+[user]
+	email = nurullah201@gmail.com
+	name = Nurullah Macun
+[core]
+	autocrlf = input
+[alias]
+    # one-line log
+    l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+
+    a = add
+    ap = add -p
+    ca = commit -a --verbose
+    cm = checkout master
+    cs = checkout staging
+    cam = commit -a -m
+    m = commit --amend --verbose
+    
+    d = diff
+    ds = diff --stat
+    dc = diff --cached
+
+    s = status
+    st = stash
+    stl = stash list
+    c = checkout
+    cb = checkout -b
+    # list branches sorted by last modified
+    b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+
+    # list aliases
+    la = "!git config -l | grep alias | cut -c 7-"
