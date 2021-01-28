@@ -29,8 +29,10 @@ padding-left = 0
 padding-right = 2
 module-margin-left = 1
 module-margin-right = 0
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
+;scroll-up = #i3.next
+;scroll-down = #i3.prev
+scroll-up = #i3.prev
+scroll-down = #i3.next
 
 
 [module/i3]
