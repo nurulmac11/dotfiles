@@ -302,6 +302,7 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 click-right = exec pavucontrol &
+click-middle = pulseaudio-control --sink-blacklist "alsa_output.pci-0000_01_00.1.hdmi-stereo-extra2" next-sink
 
 [module/alsa]
 type = internal/alsa
